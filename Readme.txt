@@ -1,1 +1,4 @@
+This program parses and prints information about a FAT32 Volume in raw mode that sits on the disk as a binary file. 
+The program does the following things:• fatfs <vdiskfile> -p volumeinfo: Prints information from the first sector (VolumeID sector) of the FAT32 file system. Printed information includes some numbers, like the number of sectors that FAT occupies.• fatfs <vdiskfile> -p rootdir: Prints the content of the root directory.
+• fatfs <vdiskfile> -p blocks <filename>: Print the numbers of the clusters, i.e., blocks allocated to file <filename>. If file size is 0, nothing is printed. 
 Sample invocations of the program are as follows:• fatfs vdisk –p volumeinfo : Print info from the volumeID sector.• fatfs vdisk –p rootdir : Print info about root directory content.• fatfs vdisk –p blocks x.bin : Print numbers of the blocks of the file with name“x.bin”.
