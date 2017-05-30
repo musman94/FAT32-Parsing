@@ -1,0 +1,1 @@
+Sample invocations of the program are as follows:• fatfs vdisk –p volumeinfo : Print info from the volumeID sector.• fatfs vdisk –p rootdir : Print info about root directory content.• fatfs vdisk –p blocks x.bin : Print numbers of the blocks of the file with name“x.bin”.
